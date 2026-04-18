@@ -64,12 +64,18 @@ if st.button("Analyzovať", type="primary"):
 
     with st.spinner("Analyzujem..."):
         response = client.responses.create(
-            model="gpt-5.4",
-            input=[
-                {"role": "system", "content": SYSTEM_PROMPT},
-                {"role": "user", "content": user_text},
-            ],
-        )
+    model="gpt-5.4",
+    tools=[
+        {
+            "type": "file_search",
+            "vector_store_ids": ["vs_69e35e655f248191b7d868d72e0186d5"]
+        }
+    ],
+    input=[
+        {"role": "system", "content": SYSTEM_PROMPT},
+        {"role": "user", "content": user_text},
+    ],
+)
 
     st.subheader("Výsledok")
     st.write(response.output_text)
