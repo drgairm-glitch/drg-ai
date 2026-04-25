@@ -41,6 +41,11 @@ Ak informáciu nenájdeš → "nenájdené v dokumentoch".
 
 Každú otázku vyhodnocuj samostatne.
 
+PRESNOSŤ KÓDOV:
+Vždy uvádzaj plný MKCH kód.
+Nikdy neskracuj K80.20 na K80.2 , ani iné kódy.
+Použi najpresnejší dostupný podkód.
+
 Rozpoznaj typ otázky:
 1. DRG ANALÝZA
 2. OPERAČNÝ PROTOKOL
